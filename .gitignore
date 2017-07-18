@@ -3,7 +3,7 @@
 .idea/
 +static_root/
 .media/
-
+howtomake.md
 
 # Created by https://www.gitignore.io/api/vim,macos,django,python,pycharm
 
