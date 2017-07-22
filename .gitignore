@@ -1,7 +1,7 @@
 ##custom##
 .config_secret/
 .idea/
-+static_root/
+static_root/
 .media/
 howtomake.md
 
