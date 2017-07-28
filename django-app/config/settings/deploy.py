@@ -5,6 +5,8 @@ config_secret_deploy = json.loads(open(CONFIG_SECRET_DEPLOY_FILE).read())
 # URLs
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(ROOT_DIR, '.static_root')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(ROOT_DIR, '.media')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False

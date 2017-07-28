@@ -14,7 +14,10 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# =====================================================아래 부분은 내가 추가한것들=====================================================
 ROOT_DIR = os.path.dirname(BASE_DIR)
+
 
 # .config_secret폴더 및 하위 파일 경로
 CONFIG_SECRET_DIR = os.path.join(ROOT_DIR, '.config_secret')
@@ -37,8 +40,11 @@ config_secret_common = json.loads(open(CONFIG_SECRET_COMMON_FILE).read())
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config_secret_common['django']['secret_key']
 
+# Authentication
+AUTH_USER_MODEL = 'member.MyUser'
 
 
+# =============================================================================================================================
 
 
 # Application definition
@@ -50,6 +56,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'member',
+
 ]
 
 MIDDLEWARE = [
